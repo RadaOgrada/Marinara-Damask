@@ -61,6 +61,8 @@ The **palette button** in the top bar opens **Appearance**:
   more text fits on a line; *short* plates stop where that frame begins.
 - **Animation:** a switch for all of it at once, and one switch for each piece in the current
   palette (candles can also stay *unlit*). Anything turned off isn't added to the page at all.
+- **Font:** *Damask* (Literata) or *Marinara* (your Marinara interface font) for the message text,
+  the input field and the panels. Names stay in Damask's script either way.
 
 Choices are saved in the browser, so your phone and your desktop can each have their own.
 
@@ -88,7 +90,7 @@ on the server, so every device that opens your Marinara gets it.
    Add the line if it isn't there. Restart Marinara.
 2. **Allow imports in the app.** **Settings → Advanced → Danger Zone**, read the warning, turn on
    **Allow third-party extension imports** and confirm **I Understand, Enable**.
-3. **Import.** Download `Damask-1.0.0.personal-extension.zip` from [Releases](../../releases)
+3. **Import.** Download `Damask-1.1.0.personal-extension.zip` from [Releases](../../releases)
    (don't unzip it). **Settings → Addons → External Extensions → Import Extension File** and pick
    the zip. It appears as a disabled draft marked *Needs approval · Full page access*.
 4. **Approve.** Press the power icon on its row (**Review and run**) and confirm **Run Exact Code**.
@@ -104,14 +106,18 @@ needs admin access: set `ADMIN_SECRET` on the server and enter the same value un
 
 ## Recommended Marinara settings
 
-- **Settings → Appearance → Roleplay → Roleplay Presentation → Roleplay Avatars: Glued Side Panel.** This is
-  the style the full-height frames are built on. *Small Circles*, *Small Rectangles* and *None*
-  also work, with smaller portraits. **Scrollable Avatars** can stay on or off.
+- **Settings → Appearance → Roleplay → Roleplay Presentation → Roleplay Avatars: Glued Side Panel.**
+  Damask is built for this style: full-height portraits in frames beside the messages. *Small Circles*
+  (Marinara's default), *Small Rectangles* and *None* still work, but there the avatar is a small
+  picture set apart from the message — the theme just keeps it tidy. **Scrollable Avatars** can stay on or off.
 - **Settings → Appearance → Conversation → Conversation Display → Chat Layout: Linear.** In *Bubbles* the theme
   leaves Conversation chats as plain Marinara.
 - **Avatars:** tall portraits (about 2:3) suit the frames. The frame uses the avatar crop you set
   in the character card for the face, then shows the rest of the picture below it as a reply
   gets longer.
+- **Settings → Appearance → App Style → Chat widget style** (and its Font, Shape and Colors) is set
+  aside while Damask is on: the theme draws its own windows and buttons. Your choice is kept and
+  comes back when you turn Damask off.
 
 ## Language
 
@@ -135,7 +141,8 @@ and sanitised), so Damask runs as page code. What it does:
 - Reads your characters and personas from your own Marinara (only to know each avatar's crop).
 - Adds a few small elements of its own: the palette button and its menu, the candles / butterfly /
   key, the margin animations, the quill in the input field.
-- Remembers the palette, plate length and animation switches in your browser's `localStorage`.
+- Sets Marinara's chat widget style aside on the page while it is on (the setting itself isn't changed).
+- Remembers the palette, plate length, font and animation switches in your browser's `localStorage`.
 
 It doesn't change messages, characters or settings. **Disable** puts the page back as it was,
 without a reload.
