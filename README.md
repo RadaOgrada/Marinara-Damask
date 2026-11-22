@@ -90,7 +90,7 @@ on the server, so every device that opens your Marinara gets it.
    Add the line if it isn't there. Restart Marinara.
 2. **Allow imports in the app.** **Settings → Advanced → Danger Zone**, read the warning, turn on
    **Allow third-party extension imports** and confirm **I Understand, Enable**.
-3. **Import.** Download `Damask-1.1.0.personal-extension.zip` from [Releases](../../releases)
+3. **Import.** Download `Damask-1.2.2.personal-extension.zip` from [Releases](../../releases)
    (don't unzip it). **Settings → Addons → External Extensions → Import Extension File** and pick
    the zip. It appears as a disabled draft marked *Needs approval · Full page access*.
 4. **Approve.** Press the power icon on its row (**Review and run**) and confirm **Run Exact Code**.
@@ -128,8 +128,9 @@ set to English (the default), it follows your browser's language instead.
 ## Works with Offstage
 
 [Offstage](https://github.com/RadaOgrada/Marinara-Offstage) is a side panel for group roleplay
-scenes (who's in the room, whispers, emotions, reply mode). In its **Auto** look it follows the
-Damask palette: dark, light or warm, and it switches when you switch.
+scenes (who's in the room, whispers, emotions, reply mode). Damask dresses its panel in the
+theme's look and palette; **Appearance → Offstage: Marinara** gives it back its own look.
+Best with Offstage 2.0.1 or later.
 
 ## Why full page access
 

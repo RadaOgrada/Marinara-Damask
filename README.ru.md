@@ -85,7 +85,7 @@ Damask — внешнее расширение с полным доступом 
    допиши) и перезапусти маринару.
 2. **Разреши импорт в самой маринаре.** **Settings → Advanced → Danger Zone** → включи
    **Allow third-party extension imports** → **I Understand, Enable**.
-3. **Импорт.** Скачай `Damask-1.1.0.personal-extension.zip` из [Releases](../../releases), не
+3. **Импорт.** Скачай `Damask-1.2.2.personal-extension.zip` из [Releases](../../releases), не
    распаковывай. **Settings → Addons → External Extensions → Import Extension File** → выбери
    архив. Появится выключенный черновик с пометкой *Needs approval · Full page access*.
 4. **Одобри.** Кнопка питания в его строке (**Review and run**) → **Run Exact Code**. Тема
@@ -121,8 +121,8 @@ Damask — внешнее расширение с полным доступом 
 ## Вместе с Offstage
 
 [Offstage (Кулисы)](https://github.com/RadaOgrada/Marinara-Offstage) — панель для групповых сцен:
-кто в комнате, шёпот, эмоции, режим ответа. В виде **«Авто»** она подстраивается под гамму
-Damask и переключается вместе с ней.
+кто в комнате, шёпот, эмоции, режим ответа. Damask одевает её панель в свой вид и гамму;
+**Оформление → Кулисы: Маринара** возвращает ей родной вид. Лучше с Offstage 2.0.1 и новее.
 
 ## Зачем полный доступ к странице
 
